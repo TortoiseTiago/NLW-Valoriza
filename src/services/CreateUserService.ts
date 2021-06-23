@@ -20,9 +20,7 @@ class CreateUserService {
     if (userAlreadyExist) throw new Error("User already exists");
 
     const user = usersRepository.create({ name, email, admin });
-
     await usersRepository.save(user);
-
     return user;
   }
 }
