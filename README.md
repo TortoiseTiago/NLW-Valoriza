@@ -1,15 +1,17 @@
 # Valoriza
 
-  Projeto desenvolvido durante a NLW Together para valorização pessoal, o sistema permite o cadastro e listagem de usuarios tags e elogios, ou compliments, com relacionamento entre tabelas, listagem personalizada de elogios por usuario, mostrando quem enviou e quem recebeu. O codigo foi desenvolvido utilizando o typescript, node e mais algumas dependencias.
+  Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.
 
-  Projeto conta ainda com sistema de login autenticação, com controle de administrador.
+## Tecnologias
 
-
+- [Node](https://nodejs.org/en/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Express](https://expressjs.com/pt-br/)
+- [JSONWebToken](https://github.com/auth0/node-jsonwebtoken#readme)
 ## Dependencies
 
 - [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 - [class-transformer](https://www.npmjs.com/package/class-transformer)
-- [express](https://expressjs.com)
 - [express-async-errors](https://www.npmjs.com/package/express-async-errors)
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 - [reflect-metadata](https://www.npmjs.com/package/reflect-metadata)
@@ -17,6 +19,13 @@
 - [typeorm](https://www.npmjs.com/package/typeorm)
 - [uuid](https://www.npmjs.com/package/uuid)
 
+## Como executar 
+
+- Clone o repositório
+- Rode yarn para baixar as dependências
+- Rode yarn typeorm migration:run para criar as tabelas do banco de dados.
+- Rode o yarn dev para iniciar a aplicação.
+Por fim, a aplicação estará disponível em http://localhost:8000
 
 ## Regras
 
@@ -33,3 +42,9 @@
 - [x] Não é permitido cadastrar elogio para si mesmo
 - [x] Não é permitido cadastrar elogios para usuarios invalidos/inativos
 - [x] O usuario precisa estar autenticado na aplicação
+
+
+
+#
+
+Feito com muito carinho -> orientado pela [Rocketseat](https://rocketseat.com.br/)
